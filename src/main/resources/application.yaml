@@ -1,0 +1,14 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /encrypt
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    url: ${server.servlet.context-path:/}/v3/api-docs
+aes:
+  enable: true
+  key: "%tJZ4Rxk!xRyT^5Y"
+  ignore-paths:
+    - /health
+    - /v3/api-docs
